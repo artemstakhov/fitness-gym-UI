@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    overflow-x: hidden;
+    width: 100%;
+  }
+  div, header, aside, p, input, button, a, form, span, ul, li {
+    box-sizing: border-box;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: 700;
+    font-family: "Ubuntu", sans-serif;
+  }
+  a{
+    text-decoration: none;
+  }
+
+  section{
+    height: 100vh;
+}
+
+  footer{
+    height: 128px;
+    background: #505050CC;
+}
+
+  /*menu*/
+  .menuWrapper{
+    height: 100px;
+    background: #1C1C1C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu{
+    height: 52px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .items{
+    width: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .item{
+    color: white;
+    font-size: 16px;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .item:hover{
+    font-size: 18px;
+  }
+
+  .logo{
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: gray;
+  }
+
+  .menuItems{
+    height: 22px;
+    width: 262px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .user{
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: rgb(255, 204, 0);
+    cursor: pointer;
+  }
+
+
+  /*startScreen*/
+  .startScreen{
+    height: 100vh;
+    background-image: url("../img/start_Screen.png");
+    background-size: cover;
+  }
+
+.parallelogramContainer{
+  transform: translate(1250px, 0);
+  position: relative;
+}
+  .parallelogram {
+    overflow-x: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1920px;
+    height: 100vh;
+    background-color: rgb(255, 204, 0);
+    -webkit-transform: skew(30deg);
+    -moz-transform: skew(30deg);
+    -o-transform: skew(30deg);
+    transform: skew(30deg);
+}
+
+
+  /*gallery*/
+  .gallery{
+    background-image: url("../img/gallery1.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .arrowsWrapper{
+    width: 1680px;
+    height: 755px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .arrow{
+    height: 64px;
+    width: 64px;
+    transition: 0.7s;
+    cursor: pointer;
+  }
+  .arrow:hover{
+    transform: scale(1.2);
+  }
+  .left{
+    background-image: url("../img/items/left-arrow.png");
+  }
+  .right{
+    background-image: url("../img/items/right-arrow.png");
+  }
+
+
+
+
+  .trainers{
+    background: #CDAC00;
+  }
+
+
+  .discounts{
+    background: #2D2D2D;
+  }
+
+
+.rates{
+  background: #505050;
+  border: 1px solid black;
+}
+
+
+.location{
+  background: #505050;
+}
+
+.dotsWrapper{
+  width: 150px;
+  height: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: #D9D9D9;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.dot:hover{
+  transform: scale(1.2);
+  background: #b4b3b3;
+}
+.active{
+  background: #FFD600;
+}
+.active:hover{
+  background: #be9f03;
+}
+
+
+
