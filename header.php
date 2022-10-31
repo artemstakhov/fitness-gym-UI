@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;500&display=swap" rel="stylesheet">
 </head>
-    <title>BubbleGym</title>
+    <title>Bubble Gym</title>
 </head>
 <body>
 
