@@ -28,64 +28,7 @@ body {
     background: #505050CC;
 }
 
-  /*menu*/
-  .menuWrapper{
-    height: 100px;
-    background: #1C1C1C;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .menu{
-    height: 52px;
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .items{
-    width: 340px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .item{
-    color: white;
-    font-size: 16px;
-    font-family: 'Archivo Narrow', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    cursor: pointer;
-  }
-
-  .item:hover{
-    font-size: 18px;
-  }
-
-  .logo{
-    width: 52px;
-    height: 52px;
-    border-radius: 50%;
-    background-color: gray;
-  }
-
-  .menuItems{
-    height: 22px;
-    width: 262px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .user{
-    width: 52px;
-    height: 52px;
-    border-radius: 50%;
-    background-color: rgb(255, 204, 0);
-    cursor: pointer;
-  }
+ 
 
 
   /*startScreen*/
