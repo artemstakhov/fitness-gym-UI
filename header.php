@@ -21,23 +21,20 @@
 <header class="header">
         <div class="menuWrapper">
             <div class="menu">
-                <div class="items">
-                    <div class="logo"></div>
+                    <div class="logo">
+                        <a href="index.php"><img src="../img/items/Subtract.png" alt="Logo"></a>
+                        <a href="index.php"><img src="../img/items/Frame.png" alt="Logo"></a>
+                    </div>
                     <div class="menuItems">
                         <h3 class="item">Тарифи</h3>
                         <h3 class="item">Про нас</h3>
                         <h3 class="item">Інфо</h3>
                         <h3 class="item">Новини</h3>
                     </div>
-                </div>
-                <div class="user"><a href="pages/authorization.php"><img src="../img/items/user.png" alt="Log In"></a></div>
-            </div>
-            
-        </div>
-        <div class="startScreen">
-            <div class="parallelogramContainer">
-                <div class="parallelogram"></div>
-            </div>
-            
+                    <div class="empty">
+
+                    </div>
+                <div class="user"><a class="userInitials" href="#">АБ</a></div>
+            </div>       
         </div>
     </header>
