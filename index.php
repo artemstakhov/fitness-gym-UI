@@ -1,9 +1,13 @@
-
-
-    <?php
+<?php
     include "header.php";
-    ?>
+?>
 
+
+    <section class="startScreen">
+            <div class="parallelogramContainer">
+                <div class="parallelogram"></div>
+            </div>
+    </section>
     <section class="gallery">  
         <div class="arrowsWrapper">
             <div class="arrow left"></div>
