@@ -43,7 +43,12 @@ const Organizer = ({ user }) => {
                 <table>
                     <thead>
                         <tr>
-                            
+                            <th></th>
+                            <th><button className={styles.accNameHead}>Користувач</button></th>
+                            <th><button className={styles.accPhoneHead}>Номер телефону</button></th>
+                            <th><button className={styles.accStatusHead}>Аккаунт</button></th>
+                            <th><button className={styles.accRateHead}>Тариф</button></th>
+                            <th></th>
                         </tr>
                     </thead>
                 </table>
@@ -57,6 +62,7 @@ const Organizer = ({ user }) => {
                     </table>
                 </div>
             </div>
+            {/* */}
             <div className={styles.footer}>
                 
             </div>
