@@ -2,7 +2,8 @@ import React from 'react';
 import styles from './Organizer.module.css';
 import ArrowRight from './assets/ArrowRight';
 import Loupe from './assets/Loupe';
-import Select from './components/Select'
+import Select from './components/Select/Select';
+import Table from './components/Table/Table';
 const Organizer = ({ user }) => {
 
     const FNL = Array.from(user.firstName)[0];
@@ -29,7 +30,7 @@ const Organizer = ({ user }) => {
                     <div className={styles.loupeWrapper}>
                         <Loupe />
                     </div>
-                    <input type="text" placeholder='Пошук' className={styles.searchInput}/>
+                    <input type="text" placeholder='Пошук' className={styles.searchInput} />
                 </div>
                 <div className={styles.filterWrapper}>
                     <Select />
@@ -38,33 +39,12 @@ const Organizer = ({ user }) => {
                     <button className={styles.addUserBtn}></button>
                 </div>
             </div>
-
             <div className={styles.mainTable}>
-                <table>
-                    <thead>
-                        <tr>
-                            <th></th>
-                            <th><button className={styles.accNameHead}>Користувач</button></th>
-                            <th><button className={styles.accPhoneHead}>Номер телефону</button></th>
-                            <th><button className={styles.accStatusHead}>Аккаунт</button></th>
-                            <th><button className={styles.accRateHead}>Тариф</button></th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                </table>
-                <div>
-                    <table> 
-                        <tbody>   
-                            <tr>
-
-                            </tr>       
-                        </tbody>
-                    </table>
-                </div>
+                <Table />
             </div>
             {/* */}
             <div className={styles.footer}>
-                
+
             </div>
         </div >
     )
