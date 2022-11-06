@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Organizer.module.css';
 import ArrowRight from './assets/ArrowRight';
 import Loupe from './assets/Loupe';
+import Select from './assets/Select'
 const Organizer = ({ user }) => {
 
     const FNL = Array.from(user.firstName)[0];
@@ -31,7 +32,7 @@ const Organizer = ({ user }) => {
                     <input type="text" placeholder='Пошук' className={styles.searchInput}/>
                 </div>
                 <div className={styles.filterWrapper}>
-
+                    <Select />
                 </div>
                 <div className={styles.addUserWrapper}>
                     <button className={styles.addUserBtn}></button>
