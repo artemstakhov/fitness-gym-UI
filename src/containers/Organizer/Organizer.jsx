@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Organizer.module.css';
 import ArrowRight from './assets/ArrowRight';
 import Loupe from './assets/Loupe';
-import Select from './assets/Select'
+import Select from './components/Select'
 const Organizer = ({ user }) => {
 
     const FNL = Array.from(user.firstName)[0];
