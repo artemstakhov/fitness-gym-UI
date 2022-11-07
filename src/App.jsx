@@ -29,6 +29,7 @@ function App() {
       {
         isLoggedIn ? (
           <>
+           <Header/>
             <Routes>
               <Route index path="/" element={<Organizer user={user} />} />
               <Route path="*" element={<Error404 />} />
@@ -39,8 +40,10 @@ function App() {
           <div className={styles.container}>
             <Header/>
             <Routes>
-              <Route index path="/" element={<Landing />} />
-              <Route index path="/Login" element={<Login onLogin={login} />} />
+              {/* <Route index path="/" element={<Landing />} />  */}
+              {/* <Route index path="/Login" element={<Login onLogin={login} />} /> */}
+              {/* */}
+              <Route index path="/" element={<Login onLogin={login} />} />
               <Route path="*" element={<Error404 />} />
             </Routes>
             <Footer/>
