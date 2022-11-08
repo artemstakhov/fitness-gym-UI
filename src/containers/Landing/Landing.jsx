@@ -1,10 +1,11 @@
 import React from 'react';
 import styles from './Landing.module.css';
+import MainFrame from './Components/MainFrame/MainFrame';
 
 const Landing = () => {
     return (
         <div className={styles.wrapper}>
-            <div className={styles.row}></div>
+            <MainFrame/>
             <div className={styles.row}></div>
             <div className={styles.row}></div>
             <div className={styles.row}></div>
