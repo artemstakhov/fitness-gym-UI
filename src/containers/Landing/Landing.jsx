@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Landing.module.css';
 import MainFrame from './Components/MainFrame/MainFrame';
 import Groups from './Components/Groups/Groups';
+import Tarifs from './Components/Tariff/Tarifs';
 
 const Landing = () => {
     return (
@@ -10,7 +11,7 @@ const Landing = () => {
             <div className={styles.row}></div>
             <div className={styles.row}></div>
             <Groups />
-            <div className={styles.row}></div>
+            <Tarifs />
             <div className={styles.row}></div>
         </div>
     )
