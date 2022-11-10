@@ -4,6 +4,9 @@ import MainFrame from './Components/MainFrame/MainFrame';
 import Groups from './Components/Groups/Groups';
 import Tarifs from './Components/Tariff/Tarifs';
 import Gallery from './Components/Gallery/Gallery';
+import Location from './Components/Location/Location';
+
+
 
 const Landing = () => {
     return (
@@ -13,7 +16,7 @@ const Landing = () => {
             <div className={styles.row}></div>
             <Groups />
             <Tarifs />
-            <div className={styles.row}></div>
+            <Location />
         </div>
     )
 }
