@@ -53,8 +53,6 @@ body {
   }
 
   .mark {
-    height: 15.9px;
-    width: 15.9px;
     margin-right: 10px;
   }
 
@@ -69,4 +67,55 @@ body {
     align-items: center;
 
     color: #FFFFFF;
+  }
+
+  .submit {
+    height: 65px;
+    width: 100%;
+    background-color: none;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    background: #313131;
+
+    font-family: 'Nunito Sans' sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+
+    color: #FFFFFF;
+  }
+
+  .wrapper:hover {
+    background-color: #FBBE23;
+  }
+
+  .wrapper:hover .submit{
+    background-color: #FBBE23;
+    color: #313131;
+  }
+
+
+  .wrapper:hover .description p {
+    color: #313131;
+  }
+
+  .wrapper:hover .mark {
+    filter: brightness(0);
+  }
+
+  .wrapper:hover .description {
+    color: #313131;
+    border-bottom: 1px solid #313131;
+    border-top: 1px solid #313131;
+  }
+
+  .wrapper:hover .title {
+    color: #313131;
   }

@@ -3,22 +3,22 @@ import styles from './Tarifs.module.css';
 import Tariff from './Components/Tariff';
 
 const simpleDesc = {
-    item1: ['./Components/Images/check-mark.png', "text"],
-    item2: ['./Components/Images/check-mark.png', "text"],
-    item3: ['./Components/Images/close-mark.png', "text"],
-    item4: ['./Components/Images/close-mark.png', "text"],
+    item1: [true, "text", 1],
+    item2: [true, "text", 2],
+    item3: [false, "text", 3],
+    item4: [false, "text", 4],
 }
 const simplePlusDesc = {
-    item1: ['./Components/Images/check-mark.png', "text"],
-    item2: ['./Components/Images/check-mark.png', "text"],
-    item3: ['./Components/Images/check-mark.png', "text"],
-    item4: ['./Components/Images/close-mark.png', "text"],
+    item1: [true, "text", 1],
+    item2: [true, "text", 2],
+    item3: [true, "text", 3],
+    item4: [false, "text", 4],
 }
 const unlimitedDesc = {
-    item1: ['./Components/Images/check-mark.png', "text"],
-    item2: ['./Components/Images/check-mark.png', "text"],
-    item3: ['./Components/Images/check-mark.png', "text"],
-    item4: ['./Components/Images/check-mark.png', "text"],
+    item1: [true, "text", 1],
+    item2: [true, "text", 2],
+    item3: [true, "text", 3],
+    item4: [true, "text", 4],
 }
 
 const Tarrifs = () => {
