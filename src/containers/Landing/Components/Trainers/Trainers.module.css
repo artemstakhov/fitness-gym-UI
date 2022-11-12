@@ -32,8 +32,8 @@ body {
   }
   
   .profile {
-    width: 405px;
-    height: 458px;
+    width: 26.37%;
+    height: 63.43490304709141vh;
     background-color: #eab121;
     border-radius: 25px;
     background-image: url("./Images/trainer-1.jpg");
@@ -41,8 +41,8 @@ body {
   }
 
   .trainerList {
-    width: 405px;
-    height: 458px;
+    width: 26.37%;
+    height: 63.43490304709141vh;
     background-color: #eab121;
     border-radius: 0px 150px;
     display: flex;
@@ -51,8 +51,8 @@ body {
   }
 
   .trainerInfo {
-    width: 600px;
-    height: 458px;
+    width: 39.06%;
+    height: 63.43490304709141vh;
   }
 
   .name {
@@ -88,7 +88,7 @@ body {
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
-    line-height: 33px;
+    line-height: 3.3240997229916895vh;
     color: #FBBE23;
     margin-top: 20px;
   }
@@ -97,7 +97,7 @@ body {
     font-family: 'Nunito Sans' sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 3.3240997229916895vh;
     line-height: 33px;
     color: #FBBE23;
     margin-top: 10px;
@@ -112,7 +112,7 @@ body {
     font-family: 'Nunito Sans' sans-serif;
     font-style: normal;
     font-weight: 800;
-    font-size: 17px;
+    font-size: 2.3545706371191137vh;
     line-height: 33px;
     /* identical to box height */
 
@@ -123,8 +123,8 @@ body {
   }
 
   .trainers {
-    width: 285px;
-    height: 358px;
+    width: 87%;
+    height: 49.58448753462604vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -132,8 +132,8 @@ body {
   }
 
   .trainer {
-    height: 64px;
-    width: 285px;
+    height: 8.86426592797784vh;
+    width: 87%; 
     background-color: #eab121;
     display: flex;
     align-items: center;
@@ -141,7 +141,7 @@ body {
     font-family: 'Nunito Sans' sans-serif;
     font-weight: 800;
     font-style: normal;
-    font-size: 24px;
+    font-size: 3.3240997229916895vh;;
     line-height: 44px;
     color: #111111;
     border: none;
@@ -161,7 +161,7 @@ body {
     font-family: 'Nunito Sans' sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 3.3240997229916895vh;;
     line-height: 24px;
     color: #111111;
   }
