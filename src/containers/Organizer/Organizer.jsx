@@ -36,7 +36,7 @@ const Organizer = ({ user }) => {
                     <Select />
                 </div>
                 <div className={styles.addUserWrapper}>
-                    <button className={styles.addUserBtn}></button>
+                    <button className={styles.addUserBtn}>Додати користувача</button>
                 </div>
             </div>
             <div className={styles.mainTable}>

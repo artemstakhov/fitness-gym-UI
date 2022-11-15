@@ -23,7 +23,7 @@ function App() {
   const login = (isLogin) => {
     setLoggedIn(isLogin);
   }
-
+  
   return (
     <BrowserRouter>
       {
@@ -38,14 +38,14 @@ function App() {
           </>
         ) : (
           <div className={styles.container}>
-            <Header/>
+             <Header/> 
             <Routes>
-              <Route index path="/" element={<Landing />} /> 
+              <Route index path="/" element={<Landing />}/> 
               <Route index path="/Login" element={<Login onLogin={login} />} />
               
               <Route path="*" element={<Error404 />} />
             </Routes>
-            <Footer/>
+             <Footer/> 
           </div>   
         )
       }
