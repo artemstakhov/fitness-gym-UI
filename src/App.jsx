@@ -12,8 +12,9 @@ import Footer from './components/Footer/Footer';
 import styles from './App.module.css';
 import Landing from './containers/Landing/Landing';
 
+
 function App() {
-  const [isLoggedIn, setLoggedIn] = React.useState(false);
+  const [isLoggedIn, setLoggedIn] = React.useState(true);
 
   const user = {
     firstName: 'Vlad',
@@ -27,11 +28,12 @@ function App() {
   return (
     <BrowserRouter>
       {
+
         isLoggedIn ? (
           <>
            <Header/>
             <Routes>
-              <Route index path="/" element={<Organizer user={user} />} />
+              <Route index path="/org" element={<Organizer user={user} />} />
               <Route path="*" element={<Error404 />} />
             </Routes>
             <Footer/>
@@ -39,7 +41,7 @@ function App() {
         ) : (
           <div className={styles.container}>
              <Header/> 
-            <Routes>
+             <Routes>
               <Route index path="/" element={<Landing />}/> 
               <Route index path="/Login" element={<Login onLogin={login} />} />
               
