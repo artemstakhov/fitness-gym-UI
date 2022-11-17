@@ -6,6 +6,7 @@ import Tarifs from './Components/Tariff/Tarifs';
 import Gallery from './Components/Gallery/Gallery';
 import Location from './Components/Location/Location';
 import Trainers from './Components/Trainers/Trainers';
+import Abonement from './Components/Modal/Abonement';
 
 
 const Landing = () => {
@@ -17,6 +18,7 @@ const Landing = () => {
             <Groups />
             <Tarifs />
             <Location />
+            
         </div>
     )
 }

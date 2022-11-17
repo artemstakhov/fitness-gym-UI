@@ -34,7 +34,7 @@ const Login = ({ onLogin }) => {
                     </div>
                     <button className={styles.submit} onClick={() => { onLogin(true) }}>
                         <img src={enter} alt="" className={styles.empty}/>
-                        Увійти
+                        <a href="/organizer">Увійти</a>
                         <img src={enter} alt="" />
                     </button>
                 </form>    

@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Trainers.module.css";
+import Abonement from '../Modal/Abonement';
 
 const TrainersList = ({ list, toggleTrainer }) => {
   console.log(Array.isArray(list));
@@ -25,7 +26,7 @@ const TrainerInfo = ({trainer}) => {
             ТРЕНЕР БОЙОВИХ МИСТЕЦТВ ТА ФІТНЕСУ
           </h3>
           <p className={styles.specializationDesc}>
-            Майстер спорту України з боксу. Неодноразовий призер і переможець
+           11 Майстер спорту України з боксу. Неодноразовий призер і переможець
             змагань з боксу і фітнесу.
           </p>
           <h2 className={styles.cv}>РЕЗЮМЕ</h2>
@@ -47,12 +48,13 @@ const TrainerInfo = ({trainer}) => {
     )
 }
 
+
 const Trainers = () => {
   const [trainers, setTrainers] = React.useState([]);
   const [isLoaded, setIsLoaded] = React.useState(false);
   const [selectedTrainer, setSelectedTrainer] = React.useState(null);
-
   const toggleTrainer = trainer => setSelectedTrainer(trainer);
+  const [modalActive, setModalActive] = React.useState(true);
 
 
   React.useEffect(() => {
@@ -78,6 +80,7 @@ const Trainers = () => {
 
   return (
     <div className={styles.wrapper}>
+      <Abonement active={modalActive} setActive={setModalActive} />
       <div className={styles.content}>
         <div className={styles.profile}></div>
         {selectedTrainer && <TrainerInfo trainer={selectedTrainer}/>}

@@ -39,10 +39,10 @@ function App() {
         ) : (
           <div className={styles.container}>
              <Header/> 
-            <Routes>
+            <Routes>          
               <Route index path="/" element={<Landing />}/> 
               <Route index path="/Login" element={<Login onLogin={login} />} />
-              
+              <Route index path="/organizer" element={<Organizer user={user} />} />
               <Route path="*" element={<Error404 />} />
             </Routes>
              <Footer/> 
