@@ -31,12 +31,12 @@ function App() {
 
         isLoggedIn ? (
           <>
-           <Header/>
+           {/* <Header/> */}
             <Routes>
               <Route index path="/org" element={<Organizer user={user} />} />
               <Route path="*" element={<Error404 />} />
             </Routes>
-            <Footer/>
+            {/* <Footer/> */}
           </>
         ) : (
           <div className={styles.container}>
