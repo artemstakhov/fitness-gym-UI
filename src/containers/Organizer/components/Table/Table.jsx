@@ -78,15 +78,15 @@ const api = axios.create({
   function Tablic() {
     const [data, setData] = React.useState([]);
     const [columns, setColumns] = useState([
-      {title: "id", field: "id"},
+      {title: "id", field: "id", hidden: true},
       { title: "Name", field: "name",},
       { title: "Surname", field: "surname"},
       { title: "Phone", field: "phone_number" },
       { title: "Acc", field: "status",render: rowData => rowData.status ? rowData="Manager" :rowData="Client",
       lookup:{false:"Client",true:"Manager"}
       },
-      { title: "Tariff", field: "season_ticket_name",render: rowData => rowData.season_ticket_name,
-      lookup:{1:"Basic",2:"Basic+",3:"unlimited"} 
+      { title: "Tariff", field: "season_ticket_name",type: 'boolean',render: rowData => rowData.season_ticket_name,
+      lookup:{"basic":"Basic","basic_plus":"Basic+","unlimited":"unlimited"} 
       }
 
     ]);
@@ -165,7 +165,7 @@ const api = axios.create({
       api.post("/organizer", newData)
       .then(res => {
         let dataToAdd = [...data];
-        dataToAdd.push(newData);
+        dataToAdd.push(newData.name,newData.surname, newData.phone_number,newData.season_ticket_name, 1);
         setData(dataToAdd);
         resolve()
         setErrorMessages([])
@@ -222,6 +222,7 @@ const api = axios.create({
           onRowAdd: (newData) =>
           new Promise((resolve) => {
             handleRowAdd(newData, resolve)
+            console.log(newData);
           }),
             onRowUpdate: (newData, oldData) =>
             new Promise((resolve) => {
