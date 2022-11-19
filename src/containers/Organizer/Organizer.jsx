@@ -12,18 +12,7 @@ const Organizer = ({ user }) => {
     return (
         <div className={styles.wrapper}>
             {/*  */}
-            <div className={styles.header}>
-                <div className={styles.accountWrapper}>
-                    <div className={styles.avatar}>{FNL + LNL}</div>
-                    <div className={styles.innerWrapper}>
-                        <div>Панель управління</div>
-                        <div>{`${user.firstName} ${user.lastName}`}</div>
-                    </div>
-                </div>
-                <div className={styles.arrowWrapper}>
-                    <ArrowRight />
-                </div>
-            </div>
+           
             {/*  */}
             <div className={styles.options}>
                 <h1 align="center">CMS</h1>
@@ -45,9 +34,7 @@ const Organizer = ({ user }) => {
              <Table/> 
             </div>
             {/* */}
-            <div className={styles.footer}>
 
-            </div>
         </div >
     )
 }

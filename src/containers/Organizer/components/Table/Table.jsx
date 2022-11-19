@@ -85,7 +85,7 @@ const api = axios.create({
       { title: "Acc", field: "status",render: rowData => rowData.status ? rowData="Manager" :rowData="Client",
       lookup:{false:"Client",true:"Manager"}
       },
-      { title: "Tariff", field: "season_ticket_name",type: 'boolean',render: rowData => rowData.season_ticket_name,
+      { title: "Tariff", field: "season_ticket_name",type: '',render: rowData => rowData.season_ticket_name,
       lookup:{"basic":"Basic","basic_plus":"Basic+","unlimited":"unlimited"} 
       }
 
