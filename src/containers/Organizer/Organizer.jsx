@@ -14,9 +14,9 @@ const Organizer = ({ user }) => {
             {/*  */}
            
             {/*  */}
-            <div className={styles.options}>
+            {/* <div className={styles.options}>
                 <h1 align="center">CMS</h1>
-                {/* <div className={styles.searchWrapper}>
+                 <div className={styles.searchWrapper}>
                     <div className={styles.loupeWrapper}>
                         <Loupe />
                     </div>
@@ -28,8 +28,8 @@ const Organizer = ({ user }) => {
                 </div>
                 <div className={styles.addUserWrapper}>
                     <button className={styles.addUserBtn}>Додати користувача</button>
-                </div> */}
-            </div>
+                </div> 
+            </div> */}
             <div className={styles.mainTable}>
              <Table/> 
             </div>
