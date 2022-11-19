@@ -24,32 +24,37 @@ function App() {
   const login = (isLogin) => {
     setLoggedIn(isLogin);
   }
-  
+
   return (
     <BrowserRouter>
       {
 
-        isLoggedIn ? (
+        // isLoggedIn?(
           <>
-           {/* <Header/> */}
+          
+           <Header />
             <Routes>
-              <Route index path="/org" element={<Organizer user={user} />} />
+              <Route index path="/org" element={<Organizer user={user} />} /> 
               <Route path="*" element={<Error404 />} />
-            </Routes>
-            {/* <Footer/> */}
-          </>
-        ) : (
-          <div className={styles.container}>
-             <Header/> 
-             <Routes>
               <Route index path="/" element={<Landing />}/> 
               <Route index path="/Login" element={<Login onLogin={login} />} />
               
               <Route path="*" element={<Error404 />} />
             </Routes>
-             <Footer/> 
-          </div>   
-        )
+            <Footer /> 
+          </>
+        // ) (
+        //   <div className={styles.container}>
+        //      <Header/> 
+        //      <Routes>
+        //       <Route index path="/" element={<Landing />}/> 
+        //       <Route index path="/Login" element={<Login onLogin={login} />} />
+              
+        //       <Route path="*" element={<Error404 />} />
+        //     </Routes>
+        //      <Footer/> 
+        //   </div>   
+        // )
       }
     </BrowserRouter>
   );

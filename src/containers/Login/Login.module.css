@@ -157,6 +157,10 @@ body {
     color: #FFFFFF;
     cursor: pointer;
   }
+  .submit:hover {
+    background: #FBBE23;
+    color: #000000;
+  }
 
   .empty {
     opacity: 0;

@@ -32,12 +32,13 @@ body {
   }
   
   .profile {
-    width: 26.37%;
+    width: 26.3%;
     height: 63.43490304709141vh;
-    background-color: #eab121;
+    background-color: #eab121; 
     border-radius: 25px;
     background-image: url("./Images/trainer-1.jpg");
-    background-position: -12vh -9vh;
+    background-repeat: no-repeat;
+    background-position: center; 
   }
 
   .trainerList {
